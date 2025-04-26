@@ -29,9 +29,33 @@
 		B604E4152DBD5558007B5B77 /* GannAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GannAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B604E4332DBD577E007B5B77 /* Exceptions for "GannAI" folder in "GannAI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Views/PointDetailView.swift,
+			);
+			target = B604E3F72DBD5556007B5B77 /* GannAI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		B604E4342DBD577E007B5B77 /* Exceptions for "GannAI" folder in "Copy Bundle Resources" phase from "GannAI" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = B604E3F62DBD5556007B5B77 /* Resources */;
+			membershipExceptions = (
+				Views/PointDetailView.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B604E3FA2DBD5556007B5B77 /* GannAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B604E4332DBD577E007B5B77 /* Exceptions for "GannAI" folder in "GannAI" target */,
+				B604E4342DBD577E007B5B77 /* Exceptions for "GannAI" folder in "Copy Bundle Resources" phase from "GannAI" target */,
+			);
 			path = GannAI;
 			sourceTree = "<group>";
 		};
