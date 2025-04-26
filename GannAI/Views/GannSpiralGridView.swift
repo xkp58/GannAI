@@ -51,23 +51,23 @@ struct GannSpiralGridView: View {
         grid[y][x] = value
         // 每层螺旋
         for layer in 1...center {
-            // 向右一步
-            x += 1; value += 1; grid[y][x] = value
+            // 向左一步
+            x -= 1; value += 1; grid[y][x] = value
             // 向上 2*layer-1 步
             for _ in 0..<(2*layer - 1) {
                 y -= 1; value += 1; grid[y][x] = value
             }
-            // 向左 2*layer 步
+            // 向右 2*layer 步
             for _ in 0..<(2*layer) {
-                x -= 1; value += 1; grid[y][x] = value
+                x += 1; value += 1; grid[y][x] = value
             }
             // 向下 2*layer 步
             for _ in 0..<(2*layer) {
                 y += 1; value += 1; grid[y][x] = value
             }
-            // 向右 2*layer 步
+            // 向左 2*layer 步
             for _ in 0..<(2*layer) {
-                x += 1; value += 1; grid[y][x] = value
+                x -= 1; value += 1; grid[y][x] = value
             }
         }
         return grid
